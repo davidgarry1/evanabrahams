@@ -293,6 +293,7 @@ main.container {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: lightgoldenrodyellow;
 }
 main.container section.content h1 {
     color: #21211f;
