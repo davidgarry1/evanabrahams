@@ -1,1 +1,41 @@
-Evin Abrahams
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<title>Evin Abrahams</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Evin Abrahams's Personal Website" />
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="/style.css" type="text/css" media="screen" />
+</head>
+<body>
+<main class="container">
+	<section class="content">
+		<h1>Evin Abrahams</h1>
+		<p id="desc"></p>
+		<a href="mailto:me@evinabrahams.com" title="Email Evin Abrahams">Contact</a>
+	</section>
+</main>
+<footer>
+	<a class="tw" href="https://twitter.com/FILLTHISIN" title="Evin Abrahams on Twitter"><span class="icon-twitter"></span></a>
+	<a class="fb" href="https://www.facebook.com/FILLTHISIN" title="Evin Abrahams on Facebook"><span class="icon-facebook"></span></a>
+	<a class="ig" href="https://www.instagram.com/FILLTHISIN/" title="Evin Abrahams on Instagram"><span class="icon-instagram"></span></a>
+	<a class="li" href="https://www.linkedin.com/in/FILLTHISIN" title="Evin Abrahams on LinkedIn"><span class="icon-linkedin"></span></a>
+</footer>
+<script>
+var write = function (target, message, index, interval) {
+	if (index < message.length) {
+		$(target).append(message[index++]);
+		setTimeout(function () { showText(target, message, index, interval); }, interval);
+	}
+}
+$(function () {
+	write("#desc", "Student, Marketer", 0, 100);
+});
+</script>
+</body>
+</html>
